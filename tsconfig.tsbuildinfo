@@ -1822,7 +1822,7 @@
         "affectsGlobalScope": false
       },
       "./src/models/player.model.ts": {
-        "version": "f7c1076ba788f9f98fff2e01e74b2132f231d59542620b4885806bc5f3df0f1d",
+        "version": "e99c149097b3325a91b8b34c9dcbd0e48e68ee8bdfc050f57e178ea6c0b3a8ef",
         "signature": "a488255a211b887e320568684e7958fcade6a1d9c20f68f4a0bd51cf4269f493",
         "affectsGlobalScope": false
       },
@@ -1867,7 +1867,7 @@
         "affectsGlobalScope": false
       },
       "./src/controllers/team.controller.ts": {
-        "version": "ded23d20d4a7c9e7a844c42004b49fb289332c9894d1a470a888c2b91a3ffd96",
+        "version": "1286e804f31894947642017e3604b5032fb662710346667eaa22d3078389ea6b",
         "signature": "ac9fbe4af584bfc43cb5db69f1c3269fd155ac65ec0408b8af77aa4115d646da",
         "affectsGlobalScope": false
       },
