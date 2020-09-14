@@ -170,4 +170,28 @@ export class PlayerController {
   async deleteById(@param.path.number('id') id: number): Promise<void> {
     await this.playerRepository.deleteById(id);
   }
+
+  @get('/teams/{id}/players', {
+    responses: {
+      '200': {
+        description: 'Array of model instances',
+        content: {
+          'application/json': {
+            schema: {
+              type: 'array',
+              items: getModelSchemaRef(Player, {includeRelations: true}),
+            },
+          },
+        },
+      },
+    },
+  })
+  async findAllPlayers(@param.path.number('id') id: number): Promise<Player[]> {
+    return this.playerRepository.find({
+      where: {
+        // eslint-disable-next-line @typescript-eslint/naming-convention
+        team_id:id
+      }
+    });
+  }
 }

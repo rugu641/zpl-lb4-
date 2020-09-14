@@ -1862,8 +1862,8 @@
         "affectsGlobalScope": false
       },
       "./src/controllers/player.controller.ts": {
-        "version": "d36e6ec10b62656a0d7c7f4c16ea8afda88ad12c3997e63abe902fda92079a54",
-        "signature": "dc1072f6d02d441a3fc1b5cc570afbcbd6629fdc409c714c72981c1e83129a65",
+        "version": "a33833e22bfa314b13483fa36da4b03383aa45eb7a1e56aa852b17d285ec48fe",
+        "signature": "3109363cb9aa0dd8671b6742c782a1b5d88717cc3b0baee524ca4f50d8008ed8",
         "affectsGlobalScope": false
       },
       "./src/controllers/team.controller.ts": {

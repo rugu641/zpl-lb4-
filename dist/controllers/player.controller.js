@@ -34,6 +34,13 @@ let PlayerController = class PlayerController {
     async deleteById(id) {
         await this.playerRepository.deleteById(id);
     }
+    async findAllPlayers(id) {
+        return this.playerRepository.find({
+            where: {
+                team_id: id
+            }
+        });
+    }
 };
 tslib_1.__decorate([
     rest_1.post('/players', {
@@ -180,6 +187,27 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:paramtypes", [Number]),
     tslib_1.__metadata("design:returntype", Promise)
 ], PlayerController.prototype, "deleteById", null);
+tslib_1.__decorate([
+    rest_1.get('/teams/{id}/players', {
+        responses: {
+            '200': {
+                description: 'Array of model instances',
+                content: {
+                    'application/json': {
+                        schema: {
+                            type: 'array',
+                            items: rest_1.getModelSchemaRef(models_1.Player, { includeRelations: true }),
+                        },
+                    },
+                },
+            },
+        },
+    }),
+    tslib_1.__param(0, rest_1.param.path.number('id')),
+    tslib_1.__metadata("design:type", Function),
+    tslib_1.__metadata("design:paramtypes", [Number]),
+    tslib_1.__metadata("design:returntype", Promise)
+], PlayerController.prototype, "findAllPlayers", null);
 PlayerController = tslib_1.__decorate([
     tslib_1.__param(0, repository_1.repository(repositories_1.PlayerRepository)),
     tslib_1.__metadata("design:paramtypes", [repositories_1.PlayerRepository])

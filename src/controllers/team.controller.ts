@@ -171,23 +171,4 @@ export class TeamController {
     await this.teamRepository.deleteById(id);
   }
 
-  // @get('/teams/{id}/players', {
-  //   responses: {
-  //     '200': {
-  //       description: 'Array of model instances',
-  //       content: {
-  //         'application/json': {
-  //           schema: {
-  //             type: 'array',
-  //             items: getModelSchemaRef(Player, {includeRelations: true}),
-  //           },
-  //         },
-  //       },
-  //     },
-  //   },
-  // })
-  // async
-
 }
-
-

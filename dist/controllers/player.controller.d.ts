@@ -12,4 +12,5 @@ export declare class PlayerController {
     updateById(id: number, player: Player): Promise<void>;
     replaceById(id: number, player: Player): Promise<void>;
     deleteById(id: number): Promise<void>;
+    findAllPlayers(id: number): Promise<Player[]>;
 }
